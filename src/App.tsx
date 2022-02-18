@@ -4,8 +4,9 @@ import { Tweet } from "./components/Tweet";
 import './App.css';
 
 function App() {
-  const [tweets, setTweets] = useState<string[]>(['lindo 1',
-   'lindo 2',
+  const [tweets, setTweets] = useState<string[]>([
+    'lindo 1',
+    'lindo 2',
     'lindo 3'
   ]);
   function createTweet(){
@@ -16,7 +17,11 @@ function App() {
       return <Tweet text={tweet}/>
     })
     }
-    <button onClick={createTweet}>Adicionar Tweet</button>
+    <button 
+    onClick={createTweet}
+    style={{
+      background: '#004991',
+    }}>Adicionar Tweet</button>
   </p>
 }
 export default App;
